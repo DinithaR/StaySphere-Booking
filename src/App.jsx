@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import Navigation from "./lib/Navigation";
-import Hero from "./lib/Hero";
+import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
 
 
 function App() {
