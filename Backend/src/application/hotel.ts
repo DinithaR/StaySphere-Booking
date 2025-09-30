@@ -4,8 +4,6 @@ import Hotel from "../infrastructure/schemas/Hotel";
 import NotFoundError from "../domain/errors/not-found-error";
 import ValidationError from "../domain/errors/validation-error";
 
-const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
 export const getAllHotels = async (
   req: Request,
   res: Response,
@@ -101,7 +99,7 @@ export const updateHotel = async (
   next: NextFunction
 ) => {
   try {
-    const hotelId = req.params.hotelId;
+    const hotelId = req.params.id;
     const updatedHotel = req.body;
 
     // Validate the request data
