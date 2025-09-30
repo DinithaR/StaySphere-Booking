@@ -1,7 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import connectDB from "./infrastructure/db.js";
+import connectDB from "./infrastructure/db";
 import hotelsRouter from "./api/hotel";
 import usersRouter from "./api/user";
 import bookingsRouter from "./api/booking";
